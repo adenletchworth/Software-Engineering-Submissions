@@ -1,4 +1,4 @@
-package HW1.Entity.Employees;
+package Entity.Employees;
 
 public class ComissionEmployee extends Employee {
     double commisionRate;

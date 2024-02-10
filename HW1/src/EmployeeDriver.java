@@ -1,10 +1,8 @@
-package HW1;
-
-import HW1.Entity.Employees.BaseEmployee;
-import HW1.Entity.Employees.ComissionEmployee;
-import HW1.Entity.Employees.Employee;
-import HW1.Entity.Employees.HourlyEmployee;
-import HW1.Entity.Employees.SalariedEmployee;
+import Entity.Employees.BaseEmployee;
+import Entity.Employees.ComissionEmployee;
+import Entity.Employees.Employee;
+import Entity.Employees.HourlyEmployee;
+import Entity.Employees.SalariedEmployee;
 
 public class EmployeeDriver {
     public static void main(String[] args) {

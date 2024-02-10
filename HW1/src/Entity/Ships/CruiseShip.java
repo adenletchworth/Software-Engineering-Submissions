@@ -1,4 +1,4 @@
-package HW1.Entity.Ships;
+package Entity.Ships;
 
 public class CruiseShip extends Ship {
     int maxPassengers;

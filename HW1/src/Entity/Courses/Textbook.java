@@ -1,4 +1,4 @@
-package HW1.Entity.Courses;
+package Entity.Courses;
 
 public class Textbook {
     

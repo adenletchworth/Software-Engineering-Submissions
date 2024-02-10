@@ -1,4 +1,4 @@
-package HW1.Entity.Ships;
+package Entity.Ships;
 
 public class CargoShip extends Ship {
     int maxCargoInTons;

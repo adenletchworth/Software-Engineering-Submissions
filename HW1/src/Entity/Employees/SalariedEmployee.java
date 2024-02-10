@@ -1,4 +1,4 @@
-package HW1.Entity.Employees;
+package Entity.Employees;
 
 public class SalariedEmployee extends Employee {
     double weeklySalary;

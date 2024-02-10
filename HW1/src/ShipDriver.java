@@ -1,8 +1,6 @@
-package HW1;
-
-import HW1.Entity.Ships.CargoShip;
-import HW1.Entity.Ships.CruiseShip;
-import HW1.Entity.Ships.Ship;
+import Entity.Ships.CargoShip;
+import Entity.Ships.CruiseShip;
+import Entity.Ships.Ship;
 
 public class ShipDriver {
     public static void main(String[] args) {
