@@ -3,58 +3,39 @@ package Entity.Courses;
 import java.util.ArrayList;
 
 public class Course {
-    String name;
-    ArrayList<Instructor> instructors;
-    ArrayList<Textbook> textbooks;
+    private String name;
+    private ArrayList<Instructor> instructors;
+    private ArrayList<Textbook> textbooks;
 
-    public Course() {
-
-    }
-
-    public Course(String name, ArrayList<Instructor> instructors, ArrayList<Textbook> textbooks) {
+    public Course(String name) {
         this.name = name;
-        this.instructors = instructors;
-        this.textbooks = textbooks;
+        this.instructors = new ArrayList<>();
+        this.textbooks = new ArrayList<>();
     }
 
-    public void setInstructors(ArrayList<Instructor> instructors) {
-        this.instructors = instructors;
+    public void addInstructor(Instructor instructor) {
+        instructors.add(instructor);
     }
 
-    public void setTextbooks(ArrayList<Textbook> textbooks) {
-        this.textbooks = textbooks;
+    public void addTextbook(Textbook textbook) {
+        textbooks.add(textbook);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public ArrayList<Instructor> getInstructors() {
-        return instructors;
-    }
-
-    public ArrayList<Textbook> getTextbooks() {
-        return textbooks;
-    }
-
+    @Override
     public String toString() {
-        
-        String textBookString = "";
-        String instructorString = "";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Course: ").append(name).append("\n");
 
-        for (Textbook textbook : textbooks) {
-            textBookString += textbook.toString() + "\n";
-        }
-
+        sb.append("Instructors:\n");
         for (Instructor instructor : instructors) {
-            instructorString += instructor.toString() + "\n";
+            sb.append(" - ").append(instructor).append("\n");
         }
 
-        return "Course: " + name + "Instructors: " + instructorString + "Textbooks: " + textBookString;
+        sb.append("Textbooks:\n");
+        for (Textbook textbook : textbooks) {
+            sb.append(" - ").append(textbook).append("\n");
+        }
 
+        return sb.toString();
     }
 }
