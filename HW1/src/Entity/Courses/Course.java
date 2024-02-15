@@ -21,6 +21,14 @@ public class Course {
         textbooks.add(textbook);
     }
 
+    public Instructor getInstructor(int index) {
+        return instructors.get(index);
+    }
+
+    public Textbook getTextbook(int index) {
+        return textbooks.get(index);
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

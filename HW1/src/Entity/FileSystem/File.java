@@ -8,6 +8,14 @@ class File {
         this.parentFolder = parentFolder;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public String setName(String name) {
+        return this.name = name;
+    }
+
     public void print() {
         System.out.println("File: " + this.name + " (in folder: " + this.parentFolder.getName() + ")");
     }
