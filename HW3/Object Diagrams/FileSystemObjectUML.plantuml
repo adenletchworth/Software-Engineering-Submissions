@@ -1,41 +1,41 @@
 @startuml FileSystemObject
 
-object "phpDemo1: Folder" as phpDemo1 {
+object "<u>phpDemo1: Folder</u>" as phpDemo1 {
     name = "phpDemo1"
 }
 
-object "Source Files: Folder" as sourceFiles {
+object "<u>Source Files: Folder</u>" as sourceFiles {
     name = "Source Files"
 }
 
-object "Include Path: Folder" as includePath {
+object "<u>Include Path: Folder</u>" as includePath {
     name = "Include Path"
 }
-    object ".phalcon: Folder" as phalcon {
+    object "<u>.phalcon: Folder</u>" as phalcon {
         name = ".phalcon"
     }
 
-    object "cache: Folder" as cache {
+    object "<u>cache: Folder</u>" as cache {
         name = "cache"
     }
 
-    object "public: Folder" as public {
+    object "<u>public: Folder</u>" as public {
         name = "public"
     }
 
-        object ".htaccess: File" as htaccess {
+        object "<u>.htaccess: File</u>" as htaccess {
             name = ".htaccess"
         }
 
-        object "index.html: File" as indexHtml {
+        object "<u>index.html: File</u>" as indexHtml {
             name = "index.html"
         }
 
-        object ".htrouter.php: File" as htrouterPhp {
+        object "<u>.htrouter.php: File</u>" as htrouterPhp {
             name = ".htrouter.php"
         }
     
-    object "Remote Files: Folder" as remoteFiles {
+    object "<u>Remote Files: Folder</u>" as remoteFiles {
         name = "Remote Files"
     }
 
