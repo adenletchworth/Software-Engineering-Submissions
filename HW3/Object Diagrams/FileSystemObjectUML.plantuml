@@ -1,0 +1,54 @@
+@startuml FileSystemObject
+
+object "phpDemo1: Folder" as phpDemo1 {
+    name = "phpDemo1"
+}
+
+object "Source Files: Folder" as sourceFiles {
+    name = "Source Files"
+}
+
+object "Include Path: Folder" as includePath {
+    name = "Include Path"
+}
+    object ".phalcon: Folder" as phalcon {
+        name = ".phalcon"
+    }
+
+    object "cache: Folder" as cache {
+        name = "cache"
+    }
+
+    object "public: Folder" as public {
+        name = "public"
+    }
+
+        object ".htaccess: File" as htaccess {
+            name = ".htaccess"
+        }
+
+        object "index.html: File" as indexHtml {
+            name = "index.html"
+        }
+
+        object ".htrouter.php: File" as htrouterPhp {
+            name = ".htrouter.php"
+        }
+    
+    object "Remote Files: Folder" as remoteFiles {
+        name = "Remote Files"
+    }
+
+phpDemo1 --* sourceFiles
+phpDemo1 --* includePath
+phpDemo1 --* remoteFiles
+
+sourceFiles --* phalcon
+sourceFiles --* cache
+sourceFiles --* public
+
+public --* htaccess
+public --* indexHtml
+public --* htrouterPhp
+
+@enduml

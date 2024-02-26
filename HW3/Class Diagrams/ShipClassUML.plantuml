@@ -1,0 +1,30 @@
+@startuml ShipClass
+
+class Ship {
+    # shipName: String
+    # yearBuilt: String
+
+    + getShipName(): String
+    + setShipName(shipName: String): void
+    + getYearBuilt(): String
+    + setYearBuilt(yearBuilt: String): void
+}
+
+class CargoShip {
+    - cargoCapacityInTonnage: int
+
+    + getCargoCapacityInTonnage(): int
+    + setCargoCapacityInTonnage(cargoCapacityInTonnage: int): void
+}
+
+class CruiseShip {
+    - maxNumberPassengers: int
+
+    + getMaxNumberPassengers(): int
+    + setMaxNumberPassengers(maxNumberPassengers: int): void
+}
+
+Ship <|-- CargoShip
+Ship <|-- CruiseShip
+
+@enduml
