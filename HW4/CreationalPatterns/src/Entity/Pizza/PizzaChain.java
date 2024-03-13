@@ -1,7 +1,7 @@
 package Entity.Pizza;
 
 public enum PizzaChain {
-    PizzaHut,
-    Dominos,
-    LittleCaesars
+    PIZZA_HUT,
+    DOMINOS,
+    LITTLE_CAESARS
 }

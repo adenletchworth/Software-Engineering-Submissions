@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PizzaBuilder {
-    private PizzaSize size; // Mandatory
+    private PizzaSize size; 
     private List<PizzaToppings> toppings;
     private PizzaChain chain;
 
