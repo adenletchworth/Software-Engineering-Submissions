@@ -6,7 +6,7 @@ public class FacebookMessagingApp implements MessagingApp{
     public FacebookMessagingApp() {}
 
     public void sendMessage(Media content) {
-        System.out.println("Sending " + content.getType() +  "message via Facebook");
+        System.out.println("Sending " + content.getType() +  " message via Facebook");
     }
 
 }

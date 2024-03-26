@@ -6,6 +6,6 @@ public class TelegramMessagingApp implements MessagingApp{
     public TelegramMessagingApp() {}
 
     public void sendMessage(Media content) {
-        System.out.println("Sending " + content.getType() +  "message via Telegram");
+        System.out.println("Sending " + content.getType() +  " message via Telegram");
     }
 }

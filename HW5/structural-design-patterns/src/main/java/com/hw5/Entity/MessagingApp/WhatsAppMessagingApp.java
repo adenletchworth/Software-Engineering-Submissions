@@ -6,7 +6,7 @@ public class WhatsAppMessagingApp implements MessagingApp{
     public WhatsAppMessagingApp() {}
 
     public void sendMessage(Media content) {
-        System.out.println("Sending " + content.getType() +  "message via WhatsApp");
+        System.out.println("Sending " + content.getType() +  " message via WhatsApp");
     }
 
 }

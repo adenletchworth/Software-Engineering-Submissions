@@ -1,17 +1,17 @@
-package com.hw5.Messages;
+package com.hw5.Entity.Messages;
 
 import com.hw5.Entity.Media.Media;
 import com.hw5.Entity.MessagingApp.MessagingApp;
 
-public class TextMessage implements MessageType{
+public class ImageMessage implements MessageType{
     protected MessagingApp messagingApp;
     protected Media content;
 
-    public TextMessage(MessagingApp messagingApp, Media content) {
+    public ImageMessage(MessagingApp messagingApp, Media content) {
         this.messagingApp = messagingApp;
         this.content = content;
     }
-    
+
     public void setMessageApp(MessagingApp messagingApp) {
         this.messagingApp = messagingApp;
     }

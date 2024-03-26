@@ -1,4 +1,4 @@
-package com.hw5.Messages;
+package com.hw5.Entity.Messages;
 
 import com.hw5.Entity.Media.Media;
 import com.hw5.Entity.MessagingApp.MessagingApp;
