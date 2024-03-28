@@ -1,4 +1,4 @@
-package com.hw5.Entity;
+package com.hw5;
 
 import com.hw5.Entity.FoodItemDecorators.*;
 import com.hw5.Entity.FoodItems.*;

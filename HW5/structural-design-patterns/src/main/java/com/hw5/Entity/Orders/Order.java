@@ -38,6 +38,10 @@ public class Order {
         return calculateDiscountedTotal(total);
     }
 
+    public int getNumberOfItems() {
+        return items.size();
+    }
+
     @Override
     public String toString() {
     return "Order for " + customer.getName() + " with " + items.size() + " items for a total of $" + String.format("%.2f", calculateTotal());

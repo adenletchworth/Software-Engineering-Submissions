@@ -12,4 +12,8 @@ public abstract class FoodItemDecorator implements FoodItem{
     public double cost(){
         return foodItem.cost();
     }
+
+    public double getCost(){
+        return 0;
+    }
 }
