@@ -1,21 +1,20 @@
 package com.cpp.Entity.Chat;
 
-import java.time.LocalDateTime;
-
 public class MessageMemento {
-    private String message;
-    private LocalDateTime timestamp;
+    private String content;
+    private long timestamp;
 
-    public MessageMemento(String message, LocalDateTime timestamp) {
-        this.message = message;
+    public MessageMemento(String content, long timestamp) {
+        this.content = content;
         this.timestamp = timestamp;
     }
 
-    public String getMessage() {
-        return message;
+    public String getContent() {
+        return content;
     }
 
-    public LocalDateTime getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 }
+

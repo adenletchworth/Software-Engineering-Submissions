@@ -1,34 +1,31 @@
 package com.cpp.Entity.Chat;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
 public class Message {
-    User sender;
-    List<User> receivers;
-    String message;
-    LocalDateTime timestamp;
+    private User sender;
+    private User recipient;
+    private String content;
+    private long timestamp;
 
-    public Message(User sender, List<User> receivers, String message) {
+    public Message(User sender, User recipient, String content, long timestamp) {
         this.sender = sender;
-        this.receivers = receivers;
-        this.message = message;
-        this.timestamp = LocalDateTime.now();
+        this.recipient = recipient;
+        this.content = content;
+        this.timestamp = timestamp;
     }
 
     public User getSender() {
         return sender;
     }
 
-    public List<User> getReceivers() {
-        return receivers;
+    public User getRecipient() {
+        return recipient;
     }
 
-    public String getMessage() {
-        return message;
+    public String getContent() {
+        return content;
     }
 
-    public LocalDateTime getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 }
