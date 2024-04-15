@@ -43,6 +43,10 @@ public class User implements IterableByUser {
         return chatHistory;
     }
 
+    public boolean receivedMessagesContains(String content) {
+        return chatHistory.containsMessageWithContent(content);
+    }
+
     @Override
     public Iterator<Message> iterator(User userToSearchWith) {
         return chatHistory.iterator(userToSearchWith);

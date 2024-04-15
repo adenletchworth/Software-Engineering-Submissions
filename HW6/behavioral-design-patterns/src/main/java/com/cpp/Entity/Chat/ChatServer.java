@@ -29,5 +29,9 @@ public class ChatServer {
     public void blockUser(User requester, User toBlock) {
         requester.blockUser(toBlock);
     }
+
+    public boolean isUserRegistered(String username) {
+        return users.containsKey(username);
+    }
 }
 

@@ -5,11 +5,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class searchMessageByUser implements Iterator<Message> {
+public class SearchMessageByUser implements Iterator<Message> {
     private List<Message> filteredMessages;
     private int currentIndex = 0;
 
-    public searchMessageByUser(List<Message> history, User userToSearchWith) {
+    public SearchMessageByUser(List<Message> history, User userToSearchWith) {
         filteredMessages = new ArrayList<>();
         for (Message message : history) {
             if (message.getSender().equals(userToSearchWith) || message.getRecipient().equals(userToSearchWith)) {

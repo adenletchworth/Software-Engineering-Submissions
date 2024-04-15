@@ -22,9 +22,13 @@ public class ChatHistory implements IterableByUser {
         messages.remove(messages.size() - 1);
     }
 
+    public boolean containsMessageWithContent(String content) {
+        return messages.stream().anyMatch(message -> message.getContent().equals(content));
+    }
+
     @Override
     public Iterator<Message> iterator(User userToSearchWith) {
-        return new searchMessageByUser(messages, userToSearchWith);
+        return new SearchMessageByUser(messages, userToSearchWith);
     }
 }
 
