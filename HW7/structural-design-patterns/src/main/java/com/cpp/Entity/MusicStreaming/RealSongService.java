@@ -12,7 +12,7 @@ public class RealSongService implements SongService {
 
     private void simulateNetworkLatency() {
         try {
-            Thread.sleep(1000); // Simulating network delay
+            Thread.sleep(1000); 
         } catch (InterruptedException ignored) {}
     }
 
@@ -26,7 +26,7 @@ public class RealSongService implements SongService {
     public List<Song> searchByTitle(String title) {
         simulateNetworkLatency();
         return songs.stream()
-                    .filter(song -> song.getTitle().equalsIgnoreCase(title))
+                    .filter(song -> song.getTitle().equalsIgnoreCase(title.toLowerCase()))
                     .collect(Collectors.toList());
     }
 

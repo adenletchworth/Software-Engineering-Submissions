@@ -4,13 +4,13 @@ public class Song {
     private String title;
     private String artist;
     private String album;
-    private int duration; // in seconds
+    private int durationSeconds;
 
-    public Song(String title, String artist, String album, int duration) {
-        this.title = title;
-        this.artist = artist;
-        this.album = album;
-        this.duration = duration;
+    public Song(String title, String artist, String album, int durationSeconds) {
+        this.title = title.toLowerCase(); 
+        this.artist = artist.toLowerCase();
+        this.album = album.toLowerCase();
+        this.durationSeconds = durationSeconds;
     }
 
     public String getTitle() {
@@ -26,7 +26,7 @@ public class Song {
     }
 
     public int getDuration() {
-        return duration;
+        return durationSeconds;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class Song {
                "title='" + title + '\'' +
                ", artist='" + artist + '\'' +
                ", album='" + album + '\'' +
-               ", duration=" + duration +
+               ", duration=" + durationSeconds +
                '}';
     }
 }

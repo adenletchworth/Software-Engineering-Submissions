@@ -1,0 +1,16 @@
+H {Arial,Black,16}
+e {Verdana,Black,16}
+l {Verdana,Black,16}
+l {Verdana,Black,16}
+o {Verdana,Black,16}
+W {Verdana,Black,16}
+o {Verdana,Black,16}
+r {Verdana,Black,16}
+l {Verdana,Black,16}
+d {Verdana,Black,16}
+C {Verdana,Black,16}
+S {Verdana,Black,16}
+5 {Verdana,Black,16}
+8 {Verdana,Black,16}
+0 {Verdana,Black,16}
+0 {Verdana,Black,16}

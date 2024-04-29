@@ -1,0 +1,16 @@
+H {Arial,Black,16}
+e {Arial,Blue,14}
+l {Arial,Blue,14}
+l {Arial,Blue,14}
+o {Arial,Blue,14}
+W {Arial,Blue,14}
+o {Arial,Blue,14}
+r {Arial,Blue,14}
+l {Arial,Blue,14}
+d {Arial,Blue,14}
+C {Arial,Blue,14}
+S {Arial,Blue,14}
+5 {Arial,Blue,14}
+8 {Arial,Blue,14}
+0 {Arial,Blue,14}
+0 {Arial,Blue,14}
